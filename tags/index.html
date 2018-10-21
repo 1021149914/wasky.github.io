@@ -15,14 +15,17 @@
 
 
 
+<meta name="description" content="ACMNodejsPythonRedisMysql">
 <meta property="og:type" content="website">
 <meta property="og:title" content="tags">
 <meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="wasky">
+<meta property="og:description" content="ACMNodejsPythonRedisMysql">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-19T09:31:05.847Z">
+<meta property="og:updated_time" content="2018-10-21T14:20:15.359Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
+<meta name="twitter:description" content="ACMNodejsPythonRedisMysql">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -213,7 +216,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">专注于前端</div>
+                    <div id="js-aboutme">专注开发</div>
                 </section>
                 
             </div>
@@ -384,7 +387,8 @@
 </script>
 
           
-        
+        <p>ACM<br>Nodejs<br>Python<br>Redis<br>Mysql</p>
+
       
     </div>
     
@@ -517,6 +521,23 @@
         }
     
 </script>
+
+    <script>
+        var originTitle = document.title;
+        var titleTime;
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+                clearTimeout(titleTime);
+            }
+            else {
+                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+                titleTime = setTimeout(function() {
+                    document.title = originTitle;
+                }, 2000);
+            }
+        })
+    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
