@@ -15,18 +15,18 @@
 
 
 
-<meta name="description" content="适用于windows操作系统 1、python -m venv venv 2、venv\Scripts\activate">
+<meta name="description" content="花了好长的时间做了一个oj，就这么一边看着教程学习flask，一边自己xjb琢磨。坎坎坷坷的做到了现在，结果却是越做越不满意，一方面时技术上不够熟悉，很多方面都是一知半解；另外一方面则是由于前期工作的不到位，感觉整个系统的设计都是有着一些问题的，从数据库开始，感觉整个系统做的很累赘，没有做到清晰的感觉。 本来在做的时候，想的时对于每个提交直接进行判断。在查看了很多博客之后，发现都是使用的一个轮询的">
 <meta name="keywords" content="flask">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OJ开发">
 <meta property="og:url" content="http://yoursite.com/2018/11/19/oj/index.html">
 <meta property="og:site_name" content="wasky">
-<meta property="og:description" content="适用于windows操作系统 1、python -m venv venv 2、venv\Scripts\activate">
+<meta property="og:description" content="花了好长的时间做了一个oj，就这么一边看着教程学习flask，一边自己xjb琢磨。坎坎坷坷的做到了现在，结果却是越做越不满意，一方面时技术上不够熟悉，很多方面都是一知半解；另外一方面则是由于前期工作的不到位，感觉整个系统的设计都是有着一些问题的，从数据库开始，感觉整个系统做的很累赘，没有做到清晰的感觉。 本来在做的时候，想的时对于每个提交直接进行判断。在查看了很多博客之后，发现都是使用的一个轮询的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-01T05:38:37.771Z">
+<meta property="og:updated_time" content="2018-12-01T06:21:38.581Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="OJ开发">
-<meta name="twitter:description" content="适用于windows操作系统 1、python -m venv venv 2、venv\Scripts\activate">
+<meta name="twitter:description" content="花了好长的时间做了一个oj，就这么一边看着教程学习flask，一边自己xjb琢磨。坎坎坷坷的做到了现在，结果却是越做越不满意，一方面时技术上不够熟悉，很多方面都是一知半解；另外一方面则是由于前期工作的不到位，感觉整个系统的设计都是有着一些问题的，从数据库开始，感觉整个系统做的很累赘，没有做到清晰的感觉。 本来在做的时候，想的时对于每个提交直接进行判断。在查看了很多博客之后，发现都是使用的一个轮询的">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -313,9 +313,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>适用于windows操作系统</p>
-<p>1、python -m venv venv</p>
-<p>2、venv\Scripts\activate</p>
+        <p>花了好长的时间做了一个oj，就这么一边看着教程学习flask，一边自己xjb琢磨。坎坎坷坷的做到了现在，结果却是越做越不满意，一方面时技术上不够熟悉，很多方面都是一知半解；另外一方面则是由于前期工作的不到位，感觉整个系统的设计都是有着一些问题的，从数据库开始，感觉整个系统做的很累赘，没有做到清晰的感觉。</p>
+<p>本来在做的时候，想的时对于每个提交直接进行判断。在查看了很多博客之后，发现都是使用的一个轮询的程序，不断判断是否有待评测的代码。也即是说，前面的提交代码，查看题目等内容和评测几乎是完全分开的。但是我又没有办法去将这两个部分完全分开，因为我选择的是和flask配到的数据库SQLALCHEMY，而且这个数据库也很奇怪，查询语句和一般的不太一样，搞得我很难受。</p>
+<p>然后，题目，公告的存储也搞得一塌糊涂。我对于很多的内容都是不管三七二十一全部用静态文件来存储。然后每次读写数据的时候，写的也很奇怪。还是太年轻了，都不知道数据库的text类型，还是在群里问了人之后，才知道又这么个类型，可以存64kb的文本。其实现在一想还是会有问题，如果文本中需要插入图片，那么，就又是一堆问题。</p>
+<p>暂时这个东西是维护不下去了，有点像重新写一个。从头开始再设计一个完整的体系。flask感觉还是挺有意思的。</p>
+<p>然后这个oj还差一个contest的部分没有完成，然后评测部分也没有写，现在的评测部分是默认accepted。还有一些东西没有学习，所以也就没有用到这个上面。就我目前的了解而言，还缺少bootstrap和nginx的部分。然后下一个版本，也考虑把数据库换掉。数据库的选择也是个问题，不是很想用关系型数据库，然后nosql还没有想好用啥。redis和sqlite都是现在还可以的，都需要等到实际体验过才知道。</p>
+<p>总而言之。。。。就是心态崩了，不想再写下去了。但是这好歹是我做的第一个网站。贴出来，提醒一下自己，以后设计的时候，一定要想全面了，不然写的是真的难受。</p>
+<p>然后下面就是这个半死不活的oj的github地址。估计也不会有什么跟新了。<br><a href="https://github.com/1021149914/oj" target="_blank" rel="noopener">https://github.com/1021149914/oj</a></p>
 
       
     </div>
@@ -327,7 +331,7 @@
         <p><span>本文标题:</span><a href="/2018/11/19/oj/">OJ开发</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">wasky</a></p>
         <p><span>发布时间:</span>2018-11-19, 20:10:33</p>
-        <p><span>最后更新:</span>2018-12-01, 13:38:37</p>
+        <p><span>最后更新:</span>2018-12-01, 14:21:38</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2018/11/19/oj/" title="OJ开发">http://yoursite.com/2018/11/19/oj/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/11/19/oj/　　作者: wasky" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
